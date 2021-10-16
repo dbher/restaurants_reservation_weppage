@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <h1>Blue Bar</h1>
+        </a>
+        <div id="menu">
+          <div id="alcohole">
+            <h3>DOMESTIC BEER</h3>
+            <div id="domestic-beer"></div>
+            <div id="imported-beer"></div>
+            <div id="vodka"></div>
+            <div id="wine"></div>
+            <div id="scotch-whisky"></div>
+            <div id="domestic-whisky"></div>
+            <div id="single-malt-whisky"></div>
+            <div id="american-whisky"></div>
+            <div id="cognac"></div>
+          </div>
+          <div id="side-dish"></div>
+          <div id="drink"></div>
+        </div>
+        <div id="message">"생일에 방문시 특별 side dish 제공됩니다"</div>
+        <div id="reservation-info">
+          <div>
+            <label for="reservation-name">예약자</label>
+            <input
+              placeholder="성함"
+              id="reservation-name"
+              name="reservation-name"
+            />
+          </div>
+          <div>
+            <label for="phone-number">연락처</label>
+            <input placeholder="번호" id="phone-number" name="phone-number" />
+          </div>
+          <div>
+            <label for="people">인원수</label>
+            <select id="people">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+          <div>
+            <label for="date">날짜 선택</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              min="2021-10-17"
+              max="2021-12-31"
+            />
+          </div>
+          <div>
+            <label for="time">시간 선택</label>
+            <input type="time" id="time" name="time" min="17:00" max="21:00" />
+          </div>
+          <div>
+            <label for="request">요청사항</label>
+            <input id="request" name="request" placeholder="없음" />
+          </div>
+        </div>
+      </div>
+      <nav></nav>
+    </header>
+    <footer>
+      <div>문의</div>
+      <div><a href="tel:010-1234-5678">전화걸기</a></div>
+      <div>주소</div>
+    </footer>
+  </body>
+  <script src="./app.js"></script>
+</html>
