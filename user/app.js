@@ -1,12 +1,95 @@
 function makeList(documentElement, elementData) {
-    for (let i in elementData) {
-    const liElement = document.createElement("li")
-    liElement.textContent = elementData[i]
-    documentElement.appendChild(liElement)
+  for (let i in elementData) {
+    const liElement = document.createElement("li");
+    liElement.textContent = elementData[i];
+    documentElement.appendChild(liElement);
   }
 }
 
-const sidedishElement = document.querySelector("#side-dish")
+const scotchWhiskyElement = document.querySelector("#scotch-whisky");
+
+const scotchWhiskyData = [
+  "Ballantine's 17y",
+  "Royal Salute 21y",
+  "Johnnie Walker Black",
+  "J&B Reserve",
+  "IMERIAL QUANTUM 19y",
+  "The SMOOTH by IMPERIAL 17y",
+];
+
+makeList(scotchWhiskyElement, scotchWhiskyData);
+
+const domesticWhiskyElement = document.querySelector("#domestic-whisky");
+
+const domesticWhiskyData = ["Scotch Blue 17y", "Windsor 17y"];
+
+makeList(domesticWhiskyElement, domesticWhiskyData);
+
+const singleMaltWhiskyElement = document.querySelector("#single-malt-whisky");
+
+const singleMaltWhiskyData = [
+  "Macallan 12y",
+  "Glenfiddich 18y",
+  "Glenfiddich 15y",
+  "Glenfiddich 12y",
+  "Glenlivet 15y",
+  "Balvenie 14y",
+  "Balvenie 12y",
+  "Macallan 12y",
+];
+
+makeList(singleMaltWhiskyElement, singleMaltWhiskyData);
+
+const AmericanWhiskyElement = document.querySelector("#american-whisky");
+
+const AmericanWhiskyData = ["Jack Daniel's"];
+
+makeList(AmericanWhiskyElement, AmericanWhiskyData);
+
+const cognacElement = document.querySelector("#cognac");
+
+const cognacData = [
+  "Jose Cuervo 1800",
+  "Jose Cuervo Especial",
+  "SILVER PATRON",
+];
+
+makeList(cognacElement, cognacData);
+
+const wineElement = document.querySelector("#wine");
+
+const wineData = ["문희주세용"];
+
+makeList(wineElement, wineData);
+
+const vodkaElement = document.querySelector("#vodka");
+
+const vodkaData = ["ABSOLUT(plain)", "ABSOLUT(flavored)", "SMIRNOFF"];
+
+makeList(vodkaElement, vodkaData);
+
+const domesticBeerElement = document.querySelector("#domestic-beer");
+
+const domesticBeerData = ["Cloud"];
+
+makeList(domesticBeerElement, domesticBeerData);
+
+const importedBeerElement = document.querySelector("#imported-beer");
+
+const importedBeerData = [
+  "Budweiser",
+  "Heineken",
+  "San Miguel",
+  "TSINGTAO",
+  "Corona",
+  "GUINNESS",
+  "BIG WAVE",
+  "Hoegaarden",
+];
+
+makeList(importedBeerElement, importedBeerData);
+
+const sidedishElement = document.querySelector("#side-dish");
 
 const sidedishData = [
   "잔치국수",
@@ -22,11 +105,11 @@ const sidedishData = [
   "골뱅이소면",
   "마른안주",
   "Today's Special 안주",
-]
+];
 
-makeList(sidedishElement, sidedishData)
+makeList(sidedishElement, sidedishData);
 
-const DrinkElement = document.querySelector("#drink")
+const DrinkElement = document.querySelector("#drink");
 
 const DrinkData = [
   "토닉워터",
@@ -39,6 +122,12 @@ const DrinkData = [
   "우유",
   "아이스티",
   "원두커피",
-]
+];
 
-makeList(DrinkElement, DrinkData)
+makeList(DrinkElement, DrinkData);
+
+function scrollToReservationInput() {
+  document
+    .getElementById("reservation-info")
+    .scrollIntoView({ behavior: "smooth" });
+}

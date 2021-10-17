@@ -16,86 +16,102 @@
 
   <body>
     <header>
-      <div id="content">
-        <h1>Blue Bar</h1>
-        <ul class="nav nav-tabs">
-          <li class="nav-item"><a href="a" class="nav-link active">양주</a></li>
-          <li class="nav-item"><a href="b" class="nav-link">소주</a></li>
-          <li class="nav-item">
-            <a href="c" class="nav-link">위스키</a>
-          </li>
-          <li class="nav-item"><a href="d" class="nav-link">맥주</a></li>
-        </ul>
-        <div id="menu">
-          <div id="alcohole">
-            <!-- <h3>DOMESTIC BEER</h3> -->
-            <div id="domestic-beer"></div>
-            <div id="imported-beer"></div>
-            <div id="vodka"></div>
-            <div id="wine"></div>
-            <div id="scotch-whisky"></div>
-            <div id="domestic-whisky"></div>
-            <div id="single-malt-whisky"></div>
-            <div id="american-whisky"></div>
-            <div id="cognac"></div>
-          </div>
-          <h3>SIDE DISH</h3>
-          <div id="side-dish"></div>
-          <h3>DRINK</h3>
-          <div id="drink"></div>
+      <h1>Blue Bar</h1>
+    </header>
+    <div id="content">
+      <!-- <ul class="nav nav-tabs">
+        <li class="nav-item"><a href="a" class="nav-link active">양주</a></li>
+        <li class="nav-item"><a href="b" class="nav-link">소주</a></li>
+        <li class="nav-item">
+          <a href="c" class="nav-link">위스키</a>
+        </li>
+        <li class="nav-item"><a href="d" class="nav-link">맥주</a></li>
+      </ul> -->
+      <div id="menu">
+        <div id="alcohole">
+          <h3>SCOTCH WHISKY</h3>
+          <div id="scotch-whisky"></div>
+          <h3>DOMESTIC WHISKY</h3>
+          <div id="domestic-whisky"></div>
+          <h3>SINGLE MALT WHISKY</h3>
+          <div id="single-malt-whisky"></div>
+          <h3>AMERICAN WHISKY</h3>
+          <div id="american-whisky"></div>
+          <h3>COGNAC</h3>
+          <div id="cognac"></div>
+          <h3>WINE</h3>
+          <div id="wine"></div>
+          <h3>VODKA</h3>
+          <div id="vodka"></div>
+          <h3>DOMESTIC BEER</h3>
+          <div id="domestic-beer"></div>
+          <h3>IMPORTED BEER</h3>
+          <div id="imported-beer"></div>
         </div>
-        <div id="message">"생일에 방문시 특별 side dish 제공됩니다"</div>
-        <div id="reservation-info">
-          <div>
-            <label for="reservation-name">예약자</label>
-            <input
-              placeholder="성함"
-              id="reservation-name"
-              name="reservation-name"
-            />
-          </div>
-          <div>
-            <label for="phone-number">연락처</label>
-            <input placeholder="번호" id="phone-number" name="phone-number" />
-          </div>
-          <div>
-            <label for="people">인원수</label>
-            <select id="people">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-          </div>
-          <div>
-            <label for="date">날짜 선택</label>
-            <input
-              type="date"
-              id="date"
-              name="date"
-              min="2021-10-17"
-              max="2021-12-31"
-            />
-          </div>
-          <div>
-            <label for="time">시간 선택</label>
-            <input type="time" id="time" name="time" min="17:00" max="21:00" />
-          </div>
-          <div>
-            <label for="request">요청사항</label>
-            <input id="request" name="request" placeholder="없음" />
-          </div>
+        <h3>SIDE DISH</h3>
+        <div id="side-dish"></div>
+        <h3>DRINK</h3>
+        <div id="drink"></div>
+      </div>
+      <div id="message">"생일에 방문시 특별 side dish 제공됩니다"</div>
+      <div class="footer">
+        <div>문의</div>
+        <div><a href="tel:010-1234-5678">전화걸기</a></div>
+        <div>주소</div>
+      </div class="footer">
+      <div id="reservation-info">
+        <div class="input-wrapper">
+          <label for="reservation-name">예약자</label>
+          <input
+            placeholder="성함"
+            id="reservation-name"
+            name="reservation-name"
+          />
+        </div>
+        <div class="input-wrapper">
+          <label for="phone-number">연락처</label>
+          <input placeholder="번호" id="phone-number" name="phone-number" />
+        </div>
+        <div class="input-wrapper">
+          <label for="people">인원수</label>
+          <select id="people">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <div class="input-wrapper">
+          <label for="date">날짜 선택</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            min="2021-10-17"
+            max="2021-12-31"
+          />
+        </div>
+        <div class="input-wrapper">
+          <label for="time">시간 선택</label>
+          <input type="time" id="time" name="time" min="17:00" max="21:00" />
+        </div>
+        <div class="input-wrapper">
+          <label for="request">요청사항</label>
+          <input id="request" name="request" placeholder="없음" />
         </div>
       </div>
-      <nav></nav>
-    </header>
-    <footer>
+    </div>
+    <!-- <div class="footer">
       <div>문의</div>
       <div><a href="tel:010-1234-5678">전화걸기</a></div>
       <div>주소</div>
-    </footer>
+    </div class="footer"> -->
+    <div id="button-wrapper">
+      <button reservation-button onclick="scrollToReservationInput()">예약하기</button>
+      <button phone-button>전화하기</button>
+    </div>
   </body>
   <script src="./app.js"></script>
 </html>

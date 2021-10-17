@@ -1,60 +1,79 @@
-/* .horizontal-box {
-	display: flex;
-	flex-direction: row;
-} */
 
-/* .align-center {
-	text-align: center;
-} */
-
-/* P {
-	width: 100px;
-	margin: 0 auto;
-} */
 *, body, html {
 	margin: 0;
 	padding: 0;
 }
 
-h1 {
+header > h1 {
 	margin-left: 0px;
-	margin-bottom: 10px;
+	/* margin-bottom: 10px; */
 	text-align: left;
 	background-color: rgb(49, 49, 160);
 	color:white;
 	position: sticky;
-	top: -40px;
+	/* top: -40px; */
 }
 
 #content {
-	height: 1000px;
 	text-align: left;
-	position: relative;
 }
 
-#menu {
-	width: fit-content;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
+#menu #reservation-name {
+	/* width: fit-content; */
+	/* margin-left: 10; */
+	/* margin-right: auto; */
+	/* position: relative; */
+	background: violet;
+	display: flex;
+	/* flex-direction: column;
+	flex-wrap: wrap; */
+	flex-grow: column wrap;
+	justify-content: center;
 }
 
-h3 {
-	margin-top: 200px;
-	margin-bottom: 500px;
-	position: relative;
+#menu h3 {
+	/* position: relative; */
+	margin-top: 10px;
 }
 
-header {
-	margin-bottom: 100px;
+.input-wrapper {
+	display: flex;
+}
+.input-wrapper > label {
+	width: 80px;
+	white-space: nowrap;
+}
+.input-wrapper > input, .input-wrapper > select {
+	flex-grow: 1;
 }
 
-footer {
+#reservation-info {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	background-color: turquoise;
+	gap: 10px;
+}
+
+#button-wrapper {
+	position: sticky;
+	width: 100%;
+
+	bottom: 0;
+	height: min-content;
+	display: flex;
+	justify-content: space-around;
+	flex-grow: 1;
+	background-color: tomato;
+	gap: 15px;
+	padding: 10px;
+}
+
+button {
+	/* padding: 10%; */
+	flex-grow: 1;
+}
+
+.footer {
 	text-align: center;
 }
-
-/* p {
-	text-align: left;
-	width: 100px;
-	margin: 0 auto;
-} */
