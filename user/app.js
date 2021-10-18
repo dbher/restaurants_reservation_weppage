@@ -131,3 +131,12 @@ function scrollToReservationInput() {
     .getElementById("reservation-info")
     .scrollIntoView({ behavior: "smooth" });
 }
+
+function toggleCallingButton() {
+  var x = document.getElementById("calling-buton-wrapper");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
